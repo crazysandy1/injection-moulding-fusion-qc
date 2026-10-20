@@ -1,0 +1,75 @@
+# Dataset folders - large files ONLY
+dataset/
+Thermographie/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv
+.env
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebooks - only checkpoints, keep .ipynb files
+.ipynb_checkpoints
+
+# Logs
+*.log
+logs/
+
+# Model artifacts
+artifacts/
+saved_models/
+*.pt
+*.pth
+*.h5
+*.pkl
+*.pickle
+
+# Plots and outputs
+plots/
+
+# OS specific
+Thumbs.db
+.DS_Store
+
+# Large data files
+*.parquet
+*.zip
+
+# Local artefacts
+fusion_system/artifacts/
+fusion_system/saved_models/
+fusion_system/plots/
+fusion_system/logs/
+fusion_system/thermal_pngs/
+mlruns/
+*.pt
+*.npy
