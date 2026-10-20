@@ -1,8 +1,12 @@
 # FusionQC: multi-sensor defect detection for injection moulding
 
+[![CI](https://github.com/crazysandy1/injection-moulding-fusion-qc/actions/workflows/ci.yml/badge.svg)](https://github.com/crazysandy1/injection-moulding-fusion-qc/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 A multimodal deep-learning system that predicts defects in injection-moulded parts by fusing four data streams from the machine: thermal images, process-curve time series, machine and quality scalars, and warpage images. It also explains each decision, suggests setpoint changes, and watches for drift and sensor faults.
 
-Mini project, Department of AI and Data Science, M S Ramaiah Institute of Technology (2026). Built by a team of four. Team member [@DarshanCHMSR](https://github.com/DarshanCHMSR). The cross-modal fusion model and its domain-adversarial training were my part.
+Started as a mini project in the Department of AI and Data Science, M S Ramaiah Institute of Technology (2026). See [AUTHORS.md](AUTHORS.md) for the team: Sandeep J S ([@crazysandy1](https://github.com/crazysandy1)), Darshan C H ([@DarshanCHMSR](https://github.com/DarshanCHMSR)), Aditya Raj and Ashwin Gowda, supervised by Dr. Sowmya B J. The cross-modal fusion model and its domain-adversarial training were Sandeep's part.
 
 ![System architecture](docs/images/system-architecture.png)
 
@@ -67,7 +71,7 @@ python evaluate.py                   # headline table across split strategies
 python evaluate.py --drift --split group_kfold
 ```
 
-A GPU is strongly recommended. `notebooks/01_train_colab.ipynb` is set up for Google Colab.
+A GPU is strongly recommended for training. Tests run on CPU. `notebooks/01_train_colab.ipynb` is set up for Google Colab.
 
 ## Repository layout
 
@@ -105,7 +109,19 @@ docs/images/           Architecture and workflow diagrams
 - No trained weights or measured results are published yet. The accuracy target in the project report (above 90%) is a goal, not a result.
 - Small dataset (47 setpoint cells), so results depend heavily on the split.
 - Pretrained backbones download from the internet on first run.
-- No automated tests yet.
+- Test coverage is minimal (model smoke tests only). Contributions welcome.
+
+## Contributing
+
+Contributions are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md). Please follow the [Code of Conduct](CODE_OF_CONDUCT.md) and report security issues as described in [SECURITY.md](SECURITY.md). Run the tests with `pip install pytest && pytest -q tests` (CPU only, no dataset needed).
+
+## Citing
+
+If you use FusionQC in research, cite it using the "Cite this repository" button on GitHub ([CITATION.cff](CITATION.cff)).
+
+## Authors
+
+See [AUTHORS.md](AUTHORS.md). Changes are tracked in [CHANGELOG.md](CHANGELOG.md).
 
 ## Acknowledgements
 
@@ -113,4 +129,4 @@ Dataset by SKZ and Fraunhofer IPA (project ProBayes). Supervised by Dr. Sowmya B
 
 ## License
 
-No license chosen yet (team project). All rights reserved by the authors until one is added.
+Code released under the [MIT License](LICENSE). The ProBayes dataset is not included and is governed by its own terms.

@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "FusionQC: multimodal defect detection for injection moulding"
+message: "If you use this software, please cite it as below."
+type: software
+license: MIT
+repository-code: "https://github.com/crazysandy1/injection-moulding-fusion-qc"
+abstract: >-
+  A multimodal deep-learning system that fuses thermal images, process-curve
+  time series, tabular machine data and warpage images with a cross-modal
+  transformer to predict injection-moulding defects, with domain-adversarial
+  training, explainability, counterfactual setpoint recommendations and drift
+  monitoring.
+keywords:
+  - multimodal learning
+  - injection moulding
+  - quality control
+  - transformer
+  - domain adversarial training
+authors:
+  - family-names: "J S"
+    given-names: "Sandeep"
+    alias: crazysandy1
+  - family-names: "C H"
+    given-names: "Darshan"
+    alias: DarshanCHMSR
+  - family-names: "Raj"
+    given-names: "Aditya"
+  - family-names: "Gowda"
+    given-names: "Ashwin"
+date-released: "2026-05-07"
+version: "0.1.0"

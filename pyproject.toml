@@ -1,0 +1,6 @@
+[tool.ruff]
+line-length = 120
+exclude = ["fusion_system/notebooks"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
