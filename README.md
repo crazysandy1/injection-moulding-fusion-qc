@@ -1,5 +1,5 @@
 # FusionQC: multi-sensor defect detection for injection moulding
-
+ 
 [![CI](https://github.com/crazysandy1/injection-moulding-fusion-qc/actions/workflows/ci.yml/badge.svg)](https://github.com/crazysandy1/injection-moulding-fusion-qc/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
